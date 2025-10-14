@@ -1,32 +1,52 @@
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container" style="height:100%;width:100%">
-  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
-  <div class="tradingview-widget-copyright"><a href="https://fr.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "allow_symbol_change": true,
-  "calendar": false,
-  "details": false,
-  "hide_side_toolbar": true,
-  "hide_top_toolbar": false,
-  "hide_legend": false,
-  "hide_volume": false,
-  "hotlist": false,
-  "interval": "D",
-  "locale": "fr",
-  "save_image": true,
-  "style": "1",
-  "symbol": "NASDAQ:AAPL",
-  "theme": "dark",
-  "timezone": "Etc/UTC",
-  "backgroundColor": "#0F0F0F",
-  "gridColor": "rgba(242, 242, 242, 0.06)",
-  "watchlist": [],
-  "withdateranges": false,
-  "compareSymbols": [],
-  "studies": [],
-  "autosize": true
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Widget TradingView</title>
+  <style>
+    html, body { height:100%; margin:0; background:transparent; }
+    .tv-wrap {
+      height:100vh;           /* adapte si besoin dans Notion */
+      width:100%;
+      border-radius:16px;     /* coins arrondis */
+      overflow:hidden;        /* coupe ce qui dépasse (toolbar, etc.) */
+      background:transparent; /* fond totalement transparent */
+    }
+  </style>
+</head>
+<body>
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container tv-wrap">
+    <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+
+    <script src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {
+      "allow_symbol_change": false,
+      "calendar": false,
+      "details": false,
+      "hide_side_toolbar": true,
+      "hide_top_toolbar": false,
+      "hide_legend": false,
+      "hide_volume": true,
+      "hotlist": false,
+      "interval": "1",
+      "locale": "fr",
+      "save_image": true,
+      "style": "1",
+      "symbol": "NASDAQ:AAPL",
+      "theme": "dark",
+      "timezone": "Etc/UTC",
+      "backgroundColor": "transparent",
+      "gridColor": "rgba(242, 242, 242, 0.06)",
+      "watchlist": [],
+      "withdateranges": false,
+      "compareSymbols": [],
+      "studies": [],
+      "autosize": true
+    }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+</body>
+</html>
