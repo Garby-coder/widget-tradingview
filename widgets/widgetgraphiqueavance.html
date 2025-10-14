@@ -8,7 +8,7 @@
     html, body { margin:0; background:transparent; }
     .widget-wrap {
       width: 100%;
-      height: 620px;            /* <- hauteur explicite pour autosize */
+      height: 600px;            /* <- hauteur fixe, très fiable en embed */
       border-radius: 32px;
       overflow: hidden;
       background: transparent;
@@ -45,7 +45,9 @@
         "gridColor": "rgba(242,242,242,0.06)",
 
         "allow_symbol_change": true,
-        "autosize": true            /* autosize ON, parent height fixée */
+        "autosize": false,              /* autosize OFF */
+        "width": "100%",
+        "height": "100%"
       }
       </script>
     </div>
