@@ -3,17 +3,58 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Widget graphique avancé</title>
+  <title>Widget Graphique Avancé</title>
   <style>
     html, body {
-      height:100%; margin:0;
-      background:#0f0f0f; color:rgb(243, 0, 0);
-      display:flex; align-items:center; justify-content:center;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+      height: 100%;
+      margin: 0;
+      background: transparent;
+    }
+    .widget-wrap {
+      width: 100%;
+      height: 100vh;
+      border-radius: 32px;       /* coins bien arrondis */
+      overflow: hidden;          /* masque les coins internes du widget */
+      background: transparent;   /* fond transparent */
+    }
+    .tradingview-widget-copyright {
+      display: none !important;  /* supprime le texte bleu */
     }
   </style>
 </head>
 <body>
-  <h1>✅ Test widget graphique avancé</h1>
+
+  <div class="widget-wrap">
+    <div class="tradingview-widget-container" style="height:100%;width:100%">
+      <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+      "allow_symbol_change": true,
+      "calendar": false,
+      "details": false,
+      "hide_side_toolbar": false,
+      "hide_top_toolbar": false,
+      "hide_legend": false,
+      "hide_volume": true,
+      "hotlist": false,
+      "interval": "D",
+      "locale": "fr",
+      "save_image": true,
+      "style": "1",
+      "symbol": "NASDAQ:AAPL",
+      "theme": "dark",
+      "timezone": "Etc/UTC",
+      "backgroundColor": "transparent",
+      "gridColor": "rgba(242, 242, 242, 0.06)",
+      "watchlist": [],
+      "withdateranges": true,
+      "compareSymbols": [],
+      "studies": [],
+      "autosize": true
+      }
+      </script>
+    </div>
+  </div>
+
 </body>
 </html>
