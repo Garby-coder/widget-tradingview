@@ -3,50 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Widget TradingView</title>
+  <title>Widget graphique avancé</title>
   <style>
-    html, body { height:100%; margin:0; background:transparent; }
-    .tv-wrap {
-      height:100vh;           /* adapte si besoin dans Notion */
-      width:100%;
-      border-radius:16px;     /* coins arrondis */
-      overflow:hidden;        /* coupe ce qui dépasse (toolbar, etc.) */
-      background:transparent; /* fond totalement transparent */
+    html, body {
+      height:100%; margin:0;
+      background:#0f0f0f; color:white;
+      display:flex; align-items:center; justify-content:center;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
     }
   </style>
 </head>
 <body>
-  <!-- TradingView Widget BEGIN -->
-  <div class="tradingview-widget-container tv-wrap">
-    <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-
-    <script src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-    {
-      "allow_symbol_change": false,
-      "calendar": false,
-      "details": false,
-      "hide_side_toolbar": true,
-      "hide_top_toolbar": false,
-      "hide_legend": false,
-      "hide_volume": true,
-      "hotlist": false,
-      "interval": "1",
-      "locale": "fr",
-      "save_image": true,
-      "style": "1",
-      "symbol": "NASDAQ:AAPL",
-      "theme": "dark",
-      "timezone": "Etc/UTC",
-      "backgroundColor": "transparent",
-      "gridColor": "rgba(242, 242, 242, 0.06)",
-      "watchlist": [],
-      "withdateranges": false,
-      "compareSymbols": [],
-      "studies": [],
-      "autosize": true
-    }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
+  <h1>✅ Test widget graphique avancé</h1>
 </body>
 </html>
