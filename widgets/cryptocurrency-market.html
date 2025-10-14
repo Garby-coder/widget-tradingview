@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Screener Crypto</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: transparent;
+    }
+    .widget-wrap {
+      width: 100%;
+      height: 100vh;
+      border-radius: 32px;      /* bords arrondis */
+      overflow: hidden;
+      background: transparent;  /* fond transparent */
+    }
+    .tradingview-widget-copyright {
+      display: none !important; /* supprime le texte bleu */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="widget-wrap">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+      {
+        "defaultColumn": "overview",
+        "screener_type": "crypto_mkt",
+        "displayCurrency": "USD",
+        "colorTheme": "dark",
+        "isTransparent": true,
+        "locale": "fr",
+        "width": "100%",
+        "height": "100%"
+      }
+      </script>
+    </div>
+  </div>
+
+</body>
+</html>

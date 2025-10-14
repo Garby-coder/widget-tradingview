@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calendrier Économique</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: transparent;
+    }
+    .widget-wrap {
+      width: 100%;
+      height: 100vh;
+      border-radius: 32px;       /* coins arrondis */
+      overflow: hidden;
+      background: transparent;   /* fond transparent */
+    }
+    .tradingview-widget-copyright {
+      display: none !important;  /* supprime le texte bleu */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="widget-wrap">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+      {
+        "colorTheme": "dark",
+        "isTransparent": true,
+        "locale": "fr",
+        "countryFilter": "ar,au,br,ca,cn,fr,de,in,id,it,jp,kr,mx,ru,sa,za,tr,gb,us,eu",
+        "importanceFilter": "-1,0,1",
+        "width": "100%",
+        "height": "100%"
+      }
+      </script>
+    </div>
+  </div>
+
+</body>
+</html>
