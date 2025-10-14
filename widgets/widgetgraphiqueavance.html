@@ -1,52 +1,32 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Graphique Avancé — AAPL</title>
-  <style>
-    html, body {
-      margin: 0;
-      background: transparent;
-    }
-    .chart-container {
-      width: 100%;
-      height: 600px;             /* hauteur fixe plus stable */
-      border-radius: 16px;       /* bords arrondis légers */
-      overflow: hidden;          /* évite les débordements */
-    }
-    .tradingview-widget-copyright {
-      display: none !important;  /* supprime le texte TradingView */
-    }
-  </style>
-</head>
-<body>
-
-  <div class="chart-container">
-    <div class="tradingview-widget-container">
-      <div class="tradingview-widget-container__widget"></div>
-      <script src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-      {
-        "symbol": "NASDAQ:AAPL",
-        "interval": "D",
-        "timezone": "Etc/UTC",
-        "theme": "dark",
-        "style": "1",
-        "locale": "fr",
-        "hide_top_toolbar": true,
-        "hide_side_toolbar": true,
-        "hide_legend": true,
-        "hide_volume": true,
-        "details": false,
-        "calendar": false,
-        "withdateranges": false,
-        "backgroundColor": false,
-        "gridColor": "rgba(242,242,242,0.06)",
-        "autosize": true
-      }
-      </script>
-    </div>
-  </div>
-
-</body>
-</html>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener nofollow" target="_blank"><span class="blue-text">AAPL stock chart</span></a><span class="trademark"> by TradingView</span></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "allow_symbol_change": true,
+  "calendar": false,
+  "details": false,
+  "hide_side_toolbar": false,
+  "hide_top_toolbar": false,
+  "hide_legend": false,
+  "hide_volume": true,
+  "hotlist": false,
+  "interval": "D",
+  "locale": "en",
+  "save_image": true,
+  "style": "1",
+  "symbol": "NASDAQ:AAPL",
+  "theme": "dark",
+  "timezone": "Etc/UTC",
+  "backgroundColor": "#0F0F0F",
+  "gridColor": "rgba(242, 242, 242, 0.06)",
+  "watchlist": [],
+  "withdateranges": true,
+  "compareSymbols": [],
+  "studies": [],
+  "autosize": true
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
