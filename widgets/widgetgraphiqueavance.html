@@ -1,39 +1,34 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AAPL — Chart (iframe, Notion-safe)</title>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:100%;width:100%;border-radius:32px;overflow:hidden;">
+  <div class="tradingview-widget-container__widget" style="height:100%;width:100%;border-radius:32px;overflow:hidden;"></div>
+  
+  <!-- Texte bleu supprimé -->
   <style>
-    html, body { margin:0; background:#0f0f0f00; }
-    iframe{
-      width:100%;
-      height:620px;         /* hauteur fixe = clé pour Notion */
-      border:0;
-      border-radius:32px;   /* coins arrondis */
-      display:block;
-      overflow:hidden;
-    }
+    .tradingview-widget-copyright { display: none !important; }
   </style>
-</head>
-<body>
-  <iframe
-    src="https://s.tradingview.com/widgetembed/?symbol=NASDAQ%3AAAPL&interval=D&theme=Dark&style=1&locale=fr&timezone=Etc%2FUTC
-    &hide_top_toolbar=0
-    &hide_side_toolbar=0
-    &withdateranges=1
-    &allow_symbol_change=1
-    &saveimage=1
-    &details=1
-    &hide_legend=0
-    &hide_volume=0
-    &show_popup_button=1
-    &popup_width=1000
-    &popup_height=650
-    &studies=[]"
-    allowtransparency="true"
-    scrolling="no"
-    allowfullscreen>
-  </iframe>
-</body>
-</html>
+
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+    "symbol": "NASDAQ:AAPL",
+    "interval": "D",
+    "timezone": "Etc/UTC",
+    "theme": "dark",
+    "style": "1",
+    "locale": "fr",
+    "allow_symbol_change": true,
+    "calendar": false,
+    "details": false,
+    "hide_side_toolbar": false,
+    "hide_top_toolbar": false,
+    "hide_legend": false,
+    "hide_volume": true,
+    "hotlist": false,
+    "save_image": true,
+    "backgroundColor": "#0F0F0F",
+    "gridColor": "rgba(242, 242, 242, 0.06)",
+    "withdateranges": true,
+    "autosize": true
+  }
+  </script>
+</div>
+<!-- TradingView Widget END -->
