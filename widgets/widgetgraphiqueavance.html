@@ -6,19 +6,31 @@
   <title>AAPL — Chart (iframe, Notion-safe)</title>
   <style>
     html, body { margin:0; background:#0f0f0f00; }
-    iframe {
-      width: 100%;
-      height: 620px;     /* hauteur fixe = clé */
-      border: 0;
-      border-radius: 32px;
-      display: block;
-      overflow: hidden;
+    iframe{
+      width:100%;
+      height:620px;         /* hauteur fixe = clé pour Notion */
+      border:0;
+      border-radius:32px;   /* coins arrondis */
+      display:block;
+      overflow:hidden;
     }
   </style>
 </head>
 <body>
   <iframe
-    src="https://s.tradingview.com/widgetembed/?symbol=NASDAQ%3AAAPL&interval=D&theme=Dark&style=1&hide_top_toolbar=1&hide_side_toolbar=1&withdateranges=0&allow_symbol_change=1&saveimage=0&studies=[]&locale=fr&timezone=Etc%2FUTC"
+    src="https://s.tradingview.com/widgetembed/?symbol=NASDAQ%3AAAPL&interval=D&theme=Dark&style=1&locale=fr&timezone=Etc%2FUTC
+    &hide_top_toolbar=0
+    &hide_side_toolbar=0
+    &withdateranges=1
+    &allow_symbol_change=1
+    &saveimage=1
+    &details=1
+    &hide_legend=0
+    &hide_volume=0
+    &show_popup_button=1
+    &popup_width=1000
+    &popup_height=650
+    &studies=[]"
     allowtransparency="true"
     scrolling="no"
     allowfullscreen>
